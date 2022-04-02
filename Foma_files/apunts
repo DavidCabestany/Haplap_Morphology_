@@ -1,0 +1,66 @@
+
+#Apunts
+
+def V [a|e|i|o|u];
+
+def Digit [%0|1|2|3|4|5|6|7|8|9];
+
+regex Digit+ @-> "<Digit>" ... "</Digit>"
+
+def Months {jan} | {feb} | {Mar} | {Apr} | {May} | {Jun} | {Jul} | {Aug} | {Sep} | {Oct} | {Nov} | {Dec} ;
+
+def Date Months (" " [[[1|2] Digit] | [Digit] | [3 [%0|1]]])
+
+regex [W " "]* W .o. [a|b|c] -> 2 .o. [d|e|f]->3 .o. [g|h|i]->4 .o. [j|k|l] ->5 .o. [m|n|o] -> 6 .o.  [p|q|r|s]->7 .o. [t|u|v]->8 .o.  [w|x|y|z]->9.o.  [" "]->"0";
+
+Separador de palabras:
+
+foma[2]: regex [W " "]* W .o. " " -> 0 ;
+
+up thisisaboy
+this is a boy
+
+foma[3]: up theyare
+they are
+they a re
+
+foma[3]: regex [0:" "|?]* .o. [W " "]* W;
+foma[4]: regex 0 -> " "  .o. [W " "]* W;
+
+foma[5]: down yummy
+yummy
+foma[5]: down thisissoyouareyummy
+this is so you are yummy
+this is so you a re yummy
+
+SWIPE EXERCISE:
+
+foma[6]: def RemoveLetters a+ -> a, b+ ->b, c+ ->c, d+ ->d, e+ ->e, f+ ->f, g+ ->g, h+ ->h, i+ ->i, j+ ->j, k+ ->k, l+ ->l, m+ ->m, n+ ->n, o+ ->o, p+ ->p, q+ ->q, r+ ->r, s+ ->s, t+ ->t, u+ ->u, v+ ->v, w+ ->w, x+ ->x, y+ ->y, z+ ->z;
+defined RemoveLetters: 12.7 kB. 27 states, 755 arcs, Cyclic.
+foma[6]: down pizza
+pizza
+foma[6]: regex RemoveLetters;
+12.7 kB. 27 states, 755 arcs, Cyclic.
+foma[7]: down pizza
+pizza
+piza
+foma[7]: def insert ? [0:?|?]* ?;
+defined insert: 354 bytes. 3 states, 5 arcs, Cyclic.
+foma[7]: regex W .o. RemoveLetters .o. insert;
+8.7 MB. 19422 states, 571010 arcs, Cyclic.
+foma[8]: down pizza
+pizza
+
+[...]
+
+piz??zna
+piz??zoa
+foma[8]: up poiuygfdcxza
+pizza
+pa
+foma[8]: 
+
+
+
+
+

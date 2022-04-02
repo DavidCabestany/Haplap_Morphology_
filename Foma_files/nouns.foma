@@ -1,0 +1,24 @@
+# def Animals  [ {dog} 		| {cat} 		| {horse} 	| {mouse} 	| {lion} 	| {bus} | {buzz} ];
+# def Suffixes [ "[pl]": {+s}]| ["[sg]":0    	];
+
+
+
+
+def Sibilant [ {ch} 		| {sh} 			| {z} 		| {s} 		| {x} 		];
+def Prefixes [ {anti} 		]*;
+
+def SibRule 	"+" -> e 	|| 	Sibilant_Sibilant 					;
+def IERule 		y -> {ie} 	|| 	_"+" s 								;
+def Cleanup 	"+" -> 0 											;
+def Base 		Animals 		Suffixes 							;
+def Grammar 	Base 	.o. 	SibRule 	.o. IERule	.o. Cleanup ;
+
+# regex Grammar ;
+
+
+
+
+
+
+
+

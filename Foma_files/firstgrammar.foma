@@ -1,0 +1,28 @@
+		# First analyzer/generator
+		# def Noun {dog}|{cat}|{bus}|{fox}|{watch}|{fly}|{buzz};
+		# def Suffixes ["[Pl]":{+s} | "[Sg]":0];
+		# def Sibilant [c h | s h | z | s | x];
+		# def SibilantRule "+" -> e || Sibilant _ Sibilant ;
+		# def IERule y -> {ie} || _ "+" s ;
+		# def Cleanup "+" -> 0 ;
+
+		# def Lexicon  Noun Suffixes ;
+		# def Grammar  Lexicon .o. SibilantRule .o. IERule .o. Cleanup ;
+		# regex Grammar ;
+
+# First analyzer/generator
+
+# def Noun {dog}|{cat}|{bus}|{fox}|{watch}|{fly}|{buzz};
+# def Suffixes ["[Pl]":{+s} | "[Sg]":0];
+
+read lexc firstgrammar.lexc
+def Lexicon
+
+def Sibilant [c h | s h | z | s | x];
+def SibilantRule "+" -> e || Sibilant _ Sibilant ;
+def IERule y -> {ie} || _ "+" s ;
+def Cleanup "+" -> 0 ;
+
+
+def Grammar  Lexicon .o. SibilantRule .o. IERule .o. Cleanup ;
+regex Grammar ;

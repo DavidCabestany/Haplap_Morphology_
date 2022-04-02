@@ -1,0 +1,18 @@
+read lexc Desktop/foma_files/able.lexc
+# Read the pre-defined lexicon
+def Lexicon;        # Label this transducer "Lexicon"
+
+def sib [{ch}|{sh}|{z}|{s}|{x}];
+
+def YourRule1 	e "+" a b l e  -> a b l e;
+def YourRule2   n "+" a b l  -> n n a b l ;
+def YourRule3  	a b l e "+" i t y -> a b i l i t y  ;
+def YourRule4  	 y "+" s -> i e s ;
+def YourRule5   s -> es || sib "+" _;
+
+def Cleanup "+" -> 0;
+
+regex Lexicon .o. YourRule1 .o. YourRule2 .o. YourRule3 .o. YourRule4 .o. YourRule5 .o. Cleanup;
+
+pairs
+

@@ -1,0 +1,65 @@
+#Project Developed By David Cabestany
+
+Multichar_Symbols [1P] [2P] [3P] [SG] [PL] [DURATIVE] [PAST] [PRES] [HEARSAY] @U.3P.ON@ @U.3P.OFF@ @U.DURATIVE.ON@	@U.DURATIVE.OFF@ @U.HEARSAY.ON@ @U.HEARSAY.OFF@		
+ 
+LEXICON Root
+	Prefix;
+
+LEXICON Prefix
+	@U.HEARSAY.ON@:@U.HEARSAY.ON@bla+ 		DurativePrefix;
+	@U.HEARSAY.OFF@		  					DurativePrefix;
+	
+LEXICON DurativePrefix
+	@U.DURATIVE.ON@:@U.DURATIVE.ON@maa+ 	3PPrefix;
+	@U.DURATIVE.OFF@		  				3PPrefix;
+
+LEXICON 3PPrefix
+	@U.3P.ON@:@U.3P.ON@s+ 					Verb;
+	@U.3P.OFF@		  						Verb;
+	
+LEXICON Verb
+	kata V;									!to lie
+	lupo V;									!to drink
+	pele V;									!to play soccer
+	sape V;									!to run
+
+LEXICON V
+	[V]:0									Vtense;
+
+LEXICON	Vtense
+	[PRES]:0								Durative1;
+	[PAST]:+n								Durative1;
+	[INF]:0									Durative2;
+
+LEXICON Durative1
+	@U.DURATIVE.ON@							Durative;
+	@U.DURATIVE.OFF@						Vinfl;
+
+LEXICON Durative2
+	@U.DURATIVE.OFF@						Vinfl2;
+
+LEXICON Durative
+	[DURATIVE]:0							Vinfl;
+
+LEXICON Vinfl
+	@U.3P.ON@								Vpers3;
+	@U.3P.OFF@								Vpers;
+
+LEXICON Vinfl2
+	@U.3P.OFF@								Hearsay;
+
+LEXICON	Vpers
+	[1P]:+tI								Vnumber;
+	[2P]:+kE								Vnumber;
+	
+LEXICON Vpers3
+	[3P]:0									Vnumber;
+
+LEXICON	Vnumber
+	[SG]:0									Hearsay;
+	[PL]:+s									Hearsay;
+	
+LEXICON Hearsay
+
+	@U.HEARSAY.OFF@ #;
+	@U.HEARSAY.ON@[HEARSAY]:@U.HEARSAY.ON@+bla 	#;

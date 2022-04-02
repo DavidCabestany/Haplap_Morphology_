@@ -1,0 +1,807 @@
+Last login: Thu Nov 25 17:27:52 on ttys000
+(base) vjpsycho@Davids-MacBook-Pro ~ % foma
+Foma, version 0.9.18alpha (svn r0)
+Copyright © 2008-2015 Mans Hulden
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; for details, type "help license"
+
+Type "help" to list all commands available.
+Type "help <topic>" or help "<operator>" for further help.
+
+foma[0]: help license
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as published by
+the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+                                    
+foma[0]: read text Desktop/engwords.txt 
+528.5 kB. 16152 states, 33769 arcs, 42405 paths.
+foma[1]: def W;
+defined W: 528.5 kB. 16152 states, 33769 arcs, 42405 paths.
+foma[0]: regex W ?*[?:" "]*?;
+174.3 kB. 4873 states, 11093 arcs, Cyclic.
+foma[1]: theboy
+Unknown command. Ignoring until end of line.
+foma[1]: down theboy
+theboy
+theb y
+the  y
+foma[1]: regex W ?*[?:" "]*? -> W ;
+Error: LHS is transducer
+foma[1]: regex W ?*[?:" "]*? -> W ;
+Error: LHS is transducer
+foma[1]: regex [W " "]* W .o. ? " " -> 0 ;
+657.1 kB. 16153 states, 41991 arcs, Cyclic.
+foma[2]: up thisisaboy
+a to a he a id a so a id a sad boy
+a to a he a id a so a id a sad a boy
+a to a he a id a so a id a say boy
+a to a he a id a so a id a say a boy
+a to a he a id a so a id a saw boy
+a to a he a id a so a id a saw a boy
+a to a he a id a so a id a sat boy
+a to a he a id a so a id a sat a boy
+a to a he a id a so a id a sap boy
+a to a he a id a so a id a sap a boy
+a to a he a id a so a id a sag boy
+a to a he a id a so a id a sag a boy
+a to a he a id a so a id a so ad boy
+a to a he a id a so a id a so ad a boy
+a to a he a id a so a id a so ax boy
+a to a he a id a so a id a so ax a boy
+a to a he a id a so a id a so at boy
+a to a he a id a so a id a so at a boy
+a to a he a id a so a id a so as boy
+a to a he a id a so a id a so as a boy
+a to a he a id a so a id a so an boy
+a to a he a id a so a id a so an a boy
+a to a he a id a so a id a so am boy
+a to a he a id a so a id a so am a boy
+a to a he a id a so a id a so ah boy
+a to a he a id a so a id a so ah a boy
+a to a he a id a so a id a so a ad boy
+a to a he a id a so a id a so a ad a boy
+a to a he a id a so a id a so a ax boy
+a to a he a id a so a id a so a ax a boy
+a to a he a id a so a id a so a at boy
+a to a he a id a so a id a so a at a boy
+a to a he a id a so a id a so a as boy
+a to a he a id a so a id a so a as a boy
+a to a he a id a so a id a so a an boy
+a to a he a id a so a id a so a an a boy
+a to a he a id a so a id a so a am boy
+a to a he a id a so a id a so a am a boy
+a to a he a id a so a id a so a ah boy
+a to a he a id a so a id a so a ah a boy
+a to a he a id a so a id sad boy
+a to a he a id a so a id sad a boy
+a to a he a id a so a id say boy
+a to a he a id a so a id say a boy
+a to a he a id a so a id saw boy
+a to a he a id a so a id saw a boy
+a to a he a id a so a id sat boy
+a to a he a id a so a id sat a boy
+a to a he a id a so a id sap boy
+a to a he a id a so a id sap a boy
+a to a he a id a so a id sag boy
+a to a he a id a so a id sag a boy
+a to a he a id a so a id so ad boy
+a to a he a id a so a id so ad a boy
+a to a he a id a so a id so ax boy
+a to a he a id a so a id so ax a boy
+a to a he a id a so a id so at boy
+a to a he a id a so a id so at a boy
+a to a he a id a so a id so as boy
+a to a he a id a so a id so as a boy
+a to a he a id a so a id so an boy
+a to a he a id a so a id so an a boy
+a to a he a id a so a id so am boy
+a to a he a id a so a id so am a boy
+a to a he a id a so a id so ah boy
+a to a he a id a so a id so ah a boy
+a to a he a id a so a id so a ad boy
+a to a he a id a so a id so a ad a boy
+a to a he a id a so a id so a ax boy
+a to a he a id a so a id so a ax a boy
+a to a he a id a so a id so a at boy
+a to a he a id a so a id so a at a boy
+a to a he a id a so a id so a as boy
+a to a he a id a so a id so a as a boy
+a to a he a id a so a id so a an boy
+a to a he a id a so a id so a an a boy
+a to a he a id a so a id so a am boy
+a to a he a id a so a id so a am a boy
+a to a he a id a so a id so a ah boy
+a to a he a id a so a id so a ah a boy
+a to a he a id a so a ix a sad boy
+a to a he a id a so a ix a sad a boy
+a to a he a id a so a ix a say boy
+a to a he a id a so a ix a say a boy
+a to a he a id a so a ix a saw boy
+a to a he a id a so a ix a saw a boy
+a to a he a id a so a ix a sat boy
+a to a he a id a so a ix a sat a boy
+a to a he a id a so a ix a sap boy
+a to a he a id a so a ix a sap a boy
+a to a he a id a so a ix a sag boy
+a to a he a id a so a ix a sag a boy
+a to a he a id a so a ix a so ad boy
+a to a he a id a so a ix a so ad a boy
+a to a he a id a so a ix a so ax boy
+a to a he a id a so a ix a so ax a boy
+a to a he a id a so a ix a so at boy
+a to a he a id a so a ix a so at a boy
+a to a he a id a so a ix a so as boy
+a to a he a id a so a ix a so as a boy
+a to a he a id a so a ix a so an boy
+foma[2]: regex [W " "]* W .o. " " -> 0 ;
+569.8 kB. 16152 states, 36403 arcs, Cyclic.
+foma[3]: up thisisaboy
+this is a boy
+foma[3]: up theyare
+they are
+they a re
+foma[3]: regex [0:" "|?]* .o. [W " "]* W;
+610.9 kB. 16152 states, 39037 arcs, Cyclic.
+foma[4]: regex 0 -> " "  .o. [W " "]* W;
+610.9 kB. 16152 states, 39037 arcs, Cyclic.
+foma[5]: down yummy
+yummy
+foma[5]: down thisissoyouareyummy
+this is so you are yummy
+this is so you a re yummy
+foma[5]: regex [a|e|i|o|u] -> [á|é|í|ó|ú] .o. [W " "]* W;
+2.2 kB. 42 states, 73 arcs, Cyclic.
+foma[6]: down camion
+???
+foma[6]: read text Desktop/spanmorph.bin 
+259 bytes. 4 states, 3 arcs, 1 path.
+foma[7]: def W.l;
+defined W.l: 259 bytes. 4 states, 3 arcs, 1 path.
+foma[6]: regex [a|e|i|o|u] -> [á|é|í|ó|ú] .o. [W " "]* W;
+2.2 kB. 42 states, 73 arcs, Cyclic.
+foma[7]: down camion
+???
+foma[7]: up camion
+???
+foma[7]: pairs
+by	by
+by by	by by
+by cry	by cry
+by cyst	by cyst
+by cysts	by cysts
+by dry	by dry
+by dryly	by dryly
+by fly	by fly
+by fry	by fry
+by gym	by gym
+by gyms	by gyms
+by gypsy	by gypsy
+by hrs	by hrs
+by hymn	by hymn
+by hymns	by hymns
+by lymph	by lymph
+by lynch	by lynch
+by lynx	by lynx
+by ml	by ml
+by my	by my
+by myth	by myth
+by nymph	by nymph
+by nymphs	by nymphs
+by ply	by ply
+by pry	by pry
+by pygmy	by pygmy
+by rhythm	by rhythm
+by rhythms	by rhythms
+by shy	by shy
+by shyly	by shyly
+by sky	by sky
+by sly	by sly
+by slyly	by slyly
+by spy	by spy
+by try	by try
+by tty	by tty
+by ttys	by ttys
+by why	by why
+by xv	by xv
+by xx	by xx
+cry	cry
+cry by	cry by
+cry cry	cry cry
+cry cyst	cry cyst
+cry cysts	cry cysts
+cry dry	cry dry
+cry dryly	cry dryly
+cry fly	cry fly
+cry fry	cry fry
+cry gym	cry gym
+cry gyms	cry gyms
+cry gypsy	cry gypsy
+cry hrs	cry hrs
+cry hymn	cry hymn
+cry hymns	cry hymns
+cry lymph	cry lymph
+cry lynch	cry lynch
+cry lynx	cry lynx
+cry ml	cry ml
+cry my	cry my
+cry myth	cry myth
+cry nymph	cry nymph
+cry nymphs	cry nymphs
+cry ply	cry ply
+cry pry	cry pry
+cry pygmy	cry pygmy
+cry rhythm	cry rhythm
+cry rhythms	cry rhythms
+cry shy	cry shy
+cry shyly	cry shyly
+cry sky	cry sky
+cry sly	cry sly
+cry slyly	cry slyly
+cry spy	cry spy
+cry try	cry try
+cry tty	cry tty
+cry ttys	cry ttys
+cry why	cry why
+cry xv	cry xv
+cry xx	cry xx
+cyst	cyst
+cyst by	cyst by
+cyst by by	cyst by by
+cyst by cry	cyst by cry
+cyst by cyst	cyst by cyst
+cyst by cysts	cyst by cysts
+cyst by dry	cyst by dry
+cyst by dryly	cyst by dryly
+cyst by fly	cyst by fly
+cyst by fry	cyst by fry
+cyst by gym	cyst by gym
+cyst by gyms	cyst by gyms
+cyst by gypsy	cyst by gypsy
+cyst by hrs	cyst by hrs
+cyst by hymn	cyst by hymn
+cyst by hymns	cyst by hymns
+cyst by lymph	cyst by lymph
+cyst by lynch	cyst by lynch
+cyst by lynx	cyst by lynx
+cyst by ml	cyst by ml
+foma[7]: def W.l;
+redefined W.l: 2.2 kB. 42 states, 73 arcs, Cyclic.
+foma[6]: regex W;
+528.5 kB. 16152 states, 33769 arcs, 42405 paths.
+foma[7]: pairs
+ebb	ebb
+ebbed	ebbed
+ebbs	ebbs
+ebbing	ebbing
+ebony	ebony
+eaves	eaves
+eavesdrop	eavesdrop
+eavesdrops	eavesdrops
+eavesdropped	eavesdropped
+eavesdropper	eavesdropper
+eavesdroppers	eavesdroppers
+eavesdropping	eavesdropping
+eat	eat
+eats	eats
+eating	eating
+eatings	eatings
+eater	eater
+eaters	eaters
+eaten	eaten
+easy	easy
+east	east
+eastward	eastward
+eastwards	eastwards
+easts	easts
+easting	easting
+easter	easter
+eastern	eastern
+easterner	easterner
+easterners	easterners
+easterly	easterly
+easing	easing
+easiness	easiness
+easily	easily
+easiest	easiest
+easier	easier
+ease	ease
+eased	eased
+eases	eases
+easer	easer
+easement	easement
+easements	easements
+ear	ear
+earth	earth
+earthworm	earthworm
+earthworms	earthworms
+earths	earths
+earthquake	earthquake
+earthquakes	earthquakes
+earthly	earthly
+earthliness	earthliness
+earthen	earthen
+earthenware	earthenware
+earthed	earthed
+ears	ears
+earshot	earshot
+earring	earring
+earrings	earrings
+earn	earn
+earns	earns
+earning	earning
+earnings	earnings
+earnest	earnest
+earnestness	earnestness
+earnestly	earnestly
+earner	earner
+earners	earners
+earned	earned
+earmark	earmark
+earmarked	earmarked
+earmarks	earmarks
+earmarking	earmarking
+earmarkings	earmarkings
+earl	earl
+early	early
+earls	earls
+earliness	earliness
+earliest	earliest
+earlier	earlier
+earing	earing
+eared	eared
+eagle	eagle
+eagles	eagles
+eager	eager
+eagerness	eagerness
+eagerly	eagerly
+each	each
+eying	eying
+eye	eye
+eyeball	eyeball
+eyeballs	eyeballs
+eyebrow	eyebrow
+eyebrows	eyebrows
+eyewitness	eyewitness
+eyewitnesses	eyewitnesses
+eyes	eyes
+eyesight	eyesight
+eyer	eyer
+eyers	eyers
+eyepiece	eyepiece
+eyepieces	eyepieces
+foma[7]: read text Desktop/spanmorph.bin
+259 bytes. 4 states, 3 arcs, 1 path.
+foma[8]: regex W;
+528.5 kB. 16152 states, 33769 arcs, 42405 paths.
+foma[9]: load Desktop/spanmorph.bin
+2.5 MB. 56496 states, 161740 arcs, 807432 paths.
+foma[10]: def W.l;
+redefined W.l: 2.5 MB. 56496 states, 161740 arcs, 807432 paths.
+foma[9]: random-words
+[1] technical
+[1] smithy
+[1] lilac
+[1] zebras
+[1] eclipse
+[2] a
+[1] xi
+[1] cylindrical
+[1] yes
+[1] gushing
+[1] xv
+[1] nasal
+[1] fur
+[1] blimps
+foma[9]: regex [a|e|i|o|u] -> [á|é|í|ó|ú] .o. [W " "]* W;
+2.2 kB. 42 states, 73 arcs, Cyclic.
+foma[10]: down camion
+???
+foma[10]: load Desktop/spanmorph.bin
+2.5 MB. 56496 states, 161740 arcs, 807432 paths.
+foma[11]: def W.l;
+redefined W.l: 2.5 MB. 56496 states, 161740 arcs, 807432 paths.
+foma[10]: down camion
+???
+foma[10]: down camión
+???
+foma[10]: up camión
+???
+foma[10]: load Desktop/spanmorph.bin
+2.5 MB. 56496 states, 161740 arcs, 807432 paths.
+foma[11]: down camión
+???
+foma[11]: random words
+Unknown command. Ignoring until end of line.
+foma[11]: random-words
+[1] é:el0:l+:aP:0r:0o:0n:0+:0P:0e:0r:0s:0+:03:0P:0+:0F:0e:0m:0+:0S:0g:0
+[1] bylina+:0N:0+:0F:0e:0m:0+:0S:0g:0
+[1] á:gg:oo:rr:aa:0+:0N:0+:0F:0e:0m:0+:0S:0g:0
+[1] se:irvi:ár:i0:s+:0V:0+:0S:0u:0b:0j:0+:0P:0r:0e:0s:0+:02:0P:0+:0P:0l:0
+[1] 0:yi:0r:00:e0:n0:d0:o+:0V:0+:0G:0e:0r:0u:0n:0d:0
+[1] rumbó:on0:e+:sA:0d:0j:0+:0M:0a:0s:0c:0+:0P:0l:0
+[1] vo:u0:ela:er:s+:0V:0+:0S:0u:0b:0j:0+:0P:0r:0e:0s:0+:02:0P:0+:0S:0g:0
+[1] uh+:0I:0n:0t:0e:0r:0
+[1] ánodo+:0N:0+:0M:0a:0s:0c:0+:0S:0g:0
+[1] gigot+:0N:0+:0M:0a:0s:0c:0+:0S:0g:0
+[1] órtico:a+:0A:0d:0j:0+:0F:0e:0m:0+:0S:0g:0
+[1] p:ss:ee:uu:dd:oo:pp:tt:ii:aa:ll:ii:ss:mm:oo:0+:0N:0+:0M:0a:0s:0c:0+:0S:0g:0
+[1] 0:fi:ur:i+:0V:0+:0I:0n:0d:0+:0P:0r:0e:0t:0+:01:0P:0+:0S:0g:0
+[1] de:lc:0i:0l:0i:0t:0r:0o:0+:0N:0+:0M:0a:0s:0c:0+:0S:0g:0P:0l:0
+[1] écade+:0N:0+:0M:0a:0s:0c:0+:0S:0g:0
+foma[11]: exit
+(base) vjpsycho@Davids-MacBook-Pro ~ % foma
+Foma, version 0.9.18alpha (svn r0)
+Copyright © 2008-2015 Mans Hulden
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; for details, type "help license"
+
+Type "help" to list all commands available.
+Type "help <topic>" or help "<operator>" for further help.
+
+foma[0]: load Desktop/spanmorph.bin 
+2.5 MB. 56496 states, 161740 arcs, 807432 paths.
+foma[1]: random-words
+[1] a:ápodo:a+:0A:0d:0j:0+:0F:0e:0m:0+:0S:0g:0
+[1] éforo0:s+:0N:0+:0M:0a:0s:0c:0+:0P:0l:0
+[1] 0:vi:ar:n+:0V:0+:0I:0n:0d:0+:0P:0r:0e:0s:0+:03:0P:0+:0P:0l:0
+[2] h:jry:ivnia+:0N:0+:0F:0e:0m:0+:0S:0g:0
+[1] o:h0:u0:eler:s+:0V:0+:0I:0n:0d:0+:0P:0r:0e:0s:0+:02:0P:0+:0S:0g:0
+[1] 0:ii:br:00:a+:0V:0+:0I:0n:0d:0+:0I:0m:0p:0+:03:0P:0+:0S:0g:0
+[1] e:éste:a+:0P:0r:0o:0n:0+:0D:0e:0m:0+:0F:0e:0m:0+:0S:0g:0
+[1] s:e0:se:0r:0+:0V:0+:0I:0n:0d:0+:0P:0r:0e:0s:0+:03:0P:0+:0S:0g:0
+[1] gélido:a0:s+:0A:0d:0j:0+:0F:0e:0m:0+:0P:0l:0
+[1] 0:fi:ur:i+:0V:0+:0I:0n:0d:0+:0P:0r:0e:0t:0+:01:0P:0+:0S:0g:0
+[1] é:el0:l+:aP:0r:0o:0n:0+:0P:0e:0r:0s:0+:03:0P:0+:0F:0e:0m:0+:0S:0g:0
+[1] añeja:er:0+:0V:0+:0S:0u:0b:0j:0+:0P:0r:0e:0s:0+:03:0P:0+:0S:0g:0
+[1] 0:fi:ur:e+:0V:0+:0I:0n:0d:0+:0P:0r:0e:0t:0+:03:0P:0+:0S:0g:0
+[1] á:cc:ii:dd:oo:s+:0N:0+:0M:0a:0s:0c:0+:0P:0l:0
+foma[1]: pairs
+raridad+N+Fem+Sg	raridad
+raridad+N+Fem+Pl	raridades
+rarificar+V+Ind+Cond+2P+Pl	rarificaríais
+rarificar+V+Ind+Cond+1P+Pl	rarificaríamos
+rarificar+V+Ind+Cond+2P+Sg	rarificarías
+rarificar+V+Ind+Cond+3P+Sg	rarificaría
+rarificar+V+Ind+Cond+1P+Sg	rarificaría
+rarificar+V+Ind+Cond+3P+Pl	rarificarían
+rarificar+V+Subj+Imp+Form1+2P+Pl	rarificarais
+rarificar+V+Subj+Imp+Form1+2P+Sg	rarificaras
+rarificar+V+Subj+Imp+Form1+3P+Sg	rarificara
+rarificar+V+Subj+Imp+Form1+1P+Sg	rarificara
+rarificar+V+Subj+Imp+Form1+3P+Pl	rarificaran
+rarificar+V+Ind+Pret+3P+Pl	rarificaron
+rarificar+V+Inf	rarificar
+rarificar+V+Subj+Fut+2P+Pl	rarificareis
+rarificar+V+Ind+Fut+1P+Pl	rarificaremos
+rarificar+V+Subj+Fut+2P+Sg	rarificares
+rarificar+V+Subj+Fut+3P+Sg	rarificare
+rarificar+V+Subj+Fut+1P+Sg	rarificare
+rarificar+V+Subj+Fut+3P+Pl	rarificaren
+rarificar+V+Ind+Fut+2P+Pl	rarificaréis
+rarificar+V+Ind+Fut+1P+Sg	rarificaré
+rarificar+V+Ind+Fut+2P+Sg	rarificarás
+rarificar+V+Ind+Fut+3P+Sg	rarificará
+rarificar+V+Ind+Fut+3P+Pl	rarificarán
+rarificativo+Adj+Masc+Pl	rarificativos
+rarificativo+Adj+Masc+Sg	rarificativo
+rarificativo+Adj+Fem+Pl	rarificativas
+rarificativo+Adj+Fem+Sg	rarificativa
+rarificar+V+Ind+Pres+1P+Pl	rarificamos
+rarificar+V+Ind+Pret+1P+Pl	rarificamos
+rarificar+V+Ind+Pres+3P+Sg	rarifica
+rarificar+V+Imperat+2P+Sg	rarifica
+rarificar+V+Ind+Pres+2P+Sg	rarificas
+rarificar+V+Subj+Imp+Form2+2P+Pl	rarificaseis
+rarificar+V+Subj+Imp+Form2+2P+Sg	rarificases
+rarificar+V+Subj+Imp+Form2+3P+Sg	rarificase
+rarificar+V+Subj+Imp+Form2+1P+Sg	rarificase
+rarificar+V+Subj+Imp+Form2+3P+Pl	rarificasen
+rarificar+V+Ind+Pret+2P+Pl	rarificasteis
+rarificar+V+Ind+Pret+2P+Sg	rarificaste
+rarificar+V+Ind+Pres+3P+Pl	rarifican
+rarificar+V+Gerund	rarificando
+rarificar+V+PPart+Fem+Pl	rarificadas
+rarificar+V+PPart+Fem+Sg	rarificada
+rarificar+V+PPart+Masc+Pl	rarificados
+rarificar+V+PPart	rarificado
+rarificar+V+PPart+Masc+Sg	rarificado
+rarificar+V+Imperat+2P+Pl	rarificad
+rarificar+V+Ind+Imp+2P+Pl	rarificabais
+rarificar+V+Ind+Imp+2P+Sg	rarificabas
+rarificar+V+Ind+Imp+3P+Sg	rarificaba
+rarificar+V+Ind+Imp+1P+Sg	rarificaba
+rarificar+V+Ind+Imp+3P+Pl	rarificaban
+rarificar+V+Subj+Imp+Form1+1P+Pl	rarificáramos
+rarificar+V+Subj+Fut+1P+Pl	rarificáremos
+rarificar+V+Ind+Pres+2P+Pl	rarificáis
+rarificar+V+Subj+Imp+Form2+1P+Pl	rarificásemos
+rarificar+V+Ind+Imp+1P+Pl	rarificábamos
+rarificar+V+Ind+Pres+1P+Sg	rarifico
+rarificar+V+Ind+Pret+3P+Sg	rarificó
+rarificar+V+Imperat+1P+Pl	rarifiquemos
+rarificar+V+Subj+Pres+1P+Pl	rarifiquemos
+rarificar+V+Imperat+3P+Sg	rarifique
+rarificar+V+Subj+Pres+3P+Sg	rarifique
+rarificar+V+Subj+Pres+1P+Sg	rarifique
+rarificar+V+Subj+Pres+2P+Sg	rarifiques
+rarificar+V+Imperat+3P+Pl	rarifiquen
+rarificar+V+Subj+Pres+3P+Pl	rarifiquen
+rarificar+V+Ind+Pret+1P+Sg	rarifiqué
+rarificar+V+Subj+Pres+2P+Pl	rarifiquéis
+rareza+N+Fem+Pl	rarezas
+rareza+N+Fem+Sg	rareza
+rarefacción+N+Fem+Sg	rarefacción
+rarefacción+N+Fem+Pl	rarefacciones
+rarefacto+Adj+Masc+Pl	rarefactos
+rarefacto+Adj+Masc+Sg	rarefacto
+rarefacto+Adj+Fem+Pl	rarefactas
+rarefacto+Adj+Fem+Sg	rarefacta
+raro+Adj+Masc+Pl	raros
+raro+Adj+Masc+Sg	raro
+raro+Adj+Fem+Pl	raras
+raro+Adj+Fem+Sg	rara
+raglán+N+Masc+Sg	raglán
+raglán+N+Masc+Pl	raglanes
+ragua+N+Fem+Pl	raguas
+ragua+N+Fem+Sg	ragua
+ragtime+N+Masc+Pl	ragtimes
+ragtime+N+Masc+Sg	ragtime
+ragú+N+Masc+Pl	ragús
+ragú+N+Masc+Pl	ragúses
+ragú+N+Masc+Sg	ragú
+ragú+N+Masc+Pl	ragúes
+raigambre+N+Fem+Pl	raigambres
+raigambre+N+Fem+Sg	raigambre
+raigal+Adj+MF+Sg	raigal
+raigal+N+Masc+Sg	raigal
+raigal+Adj+MF+Pl	raigales
+raigal+N+Masc+Pl	raigales
+foma[1]: def W;
+defined W: 2.5 MB. 56496 states, 161740 arcs, 807432 paths.
+foma[0]: regex W;
+2.5 MB. 56496 states, 161740 arcs, 807432 paths.
+foma[1]: down camión
+???
+foma[1]: down ragú
+???
+foma[1]: def Gr.l;
+defined Gr.l: 2.5 MB. 56496 states, 161740 arcs, 807432 paths.
+foma[0]: pairs
+Not enough networks on stack. Operation requires at least 1.
+foma[0]: regex Gr.l;
+203 bytes. 2 states, 1 arc, 1 path.
+foma[1]: load Desktop/spanmorph.bin
+2.5 MB. 56496 states, 161740 arcs, 807432 paths.
+foma[2]: regex Gr.l;
+203 bytes. 2 states, 1 arc, 1 path.
+foma[3]: exit
+(base) vjpsycho@Davids-MacBook-Pro ~ % foma -l Desktop/Foma_files/spanish.lexc 
+***Unknown command 'M' on line 1. Aborting.
+Foma, version 0.9.18alpha (svn r0)
+Copyright © 2008-2015 Mans Hulden
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; for details, type "help license"
+
+Type "help" to list all commands available.
+Type "help <topic>" or help "<operator>" for further help.
+
+foma[0]: def W;
+Not enough networks on stack. Operation requires at least 1.
+foma[0]: exit
+(base) vjpsycho@Davids-MacBook-Pro ~ % foma -l Desktop/Foma_files/spanish.foma
+Error opening file 'spanish.lexc'
+Error opening file 'spanish.lexc'.
+Not enough networks on stack. Operation requires at least 1.
+defined V: 713 bytes. 2 states, 12 arcs, 12 paths.
+defined Vacc: 418 bytes. 2 states, 5 arcs, 5 paths.
+defined C: 1.1 kB. 4 states, 22 arcs, 22 paths.
+defined ZRule: 682 bytes. 5 states, 19 arcs, Cyclic.
+defined AddE: 2.3 kB. 4 states, 85 arcs, Cyclic.
+defined RemoveAccent: 4.9 kB. 9 states, 244 arcs, Cyclic.
+defined Cleanup: 332 bytes. 1 state, 2 arcs, Cyclic.
+defined Rules: 7.8 kB. 17 states, 428 arcs, Cyclic.
+1.2 kB. 2 states, 1 arc, 1 path.
+Foma, version 0.9.18alpha (svn r0)
+Copyright © 2008-2015 Mans Hulden
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; for details, type "help license"
+
+Type "help" to list all commands available.
+Type "help <topic>" or help "<operator>" for further help.
+
+foma[1]: pairs
+Lexicon	Lexicon
+foma[1]: def W;
+defined W: 1.2 kB. 2 states, 1 arc, 1 path.
+foma[0]: dexit
+Unknown command. Ignoring until end of line.
+foma[0]: exit
+(base) vjpsycho@Davids-MacBook-Pro ~ % foma
+Foma, version 0.9.18alpha (svn r0)
+Copyright © 2008-2015 Mans Hulden
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; for details, type "help license"
+
+Type "help" to list all commands available.
+Type "help <topic>" or help "<operator>" for further help.
+
+foma[0]: load Desktop/spanmorph.bin 
+2.5 MB. 56496 states, 161740 arcs, 807432 paths.
+foma[1]: def Gr;
+defined Gr: 2.5 MB. 56496 states, 161740 arcs, 807432 paths.
+foma[0]: regex Gr.l;
+2.0 MB. 47939 states, 130880 arcs, 643163 paths.
+foma[1]: regex [a|e|i|o|u] -> [á|é|í|ó|ú] .o. [W " "]* W;
+623 bytes. 2 states, 2 arcs, Cyclic.
+foma[2]: regex [a|e|i|o|u] -> [á|é|í|ó|ú];
+1.0 kB. 1 state, 31 arcs, Cyclic.
+foma[3]: regex Gr.l .o. [a|e|i|o|u] -> [á|é|í|ó|ú] .o. [W " "]* W;
+160 bytes. 1 state, 0 arcs, 0 paths.
+foma[4]: regex Gr.l .o. a-> á, e->é|怀怀怀怀怀怀怀怀怀怀怀怀怀怀怀怀怀怀怀;
+1.30-1.30: error: ***0? at ']'.
+foma[4]: 
+foma[4]: regex Gr.l .o. a-> á, e->é|e|i|o|u] -> [á|é|í|ó|ú] .o. [W " "]* W;
+1.30-1.30: error: ***0? at ']'.
+foma[4]: regex Gr.l .o. a-> á, e->é|e|i|o|u] -> [á|é|í|ó|ú] .o. [W " "]* W;
+1.46-1.46: error: ***0? at ']'.
+foma[4]: 
+foma[4]: 
+foma[4]: 
+foma[4]: 
+foma[4]: 
+foma[4]: 
+foma[4]: 
+foma[4]: 
+foma[4]: 
+foma[4]: 
+foma[4]: exit
+(base) vjpsycho@Davids-MacBook-Pro ~ % foma
+Foma, version 0.9.18alpha (svn r0)
+Copyright © 2008-2015 Mans Hulden
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; for details, type "help license"
+
+Type "help" to list all commands available.
+Type "help <topic>" or help "<operator>" for further help.
+
+foma[0]: read text Desktop/engwords.txt 
+528.5 kB. 16152 states, 33769 arcs, 42405 paths.
+foma[1]: def W;
+defined W: 528.5 kB. 16152 states, 33769 arcs, 42405 paths.
+foma[0]: regex [W " "]* W .o.翴翴翴:
+foma[0]: regex [W " "]* W .o. ?:?* .o. W:
+foma[0]: regex W;
+528.5 kB. 16153 states, 33770 arcs, 42405 paths.
+foma[1]: regex [W " "]* W .o. ?:?* .o. W:
+foma[1]: down people
+foma[1]: regex [W " "]* W .o. ?:?* .o. W;
+
+def RemoveLetters a+ -> a, b+ ->b, c+ ->c, d+ ->d, e+ ->e, f+ ->f, g+ ->g, h+ ->h, i+ ->i, j+ ->j, k+ ->k, l+ ->l, m+ ->m, n+ ->n, o+ ->o, p+ ->p, q+ ->q, r+ ->r, s+ ->s, t+ ->t, u+ ->u, v+ ->v, w+ ->w, x+ ->x, y+ ->y, z+ ->z;
+
+foma[6]: def RemoveLetters a+ -> a, b+ ->b, c+ ->c, d+ ->d, e+ ->e, f+ ->f, g+ ->g, h+ ->h, i+ ->i, j+ ->j, k+ ->k, l+ ->l, m+ ->m, n+ ->n, o+ ->o, p+ ->p, q+ ->q, r+ ->r, s+ ->s, t+ ->t, u+ ->u, v+ ->v, w+ ->w, x+ ->x, y+ ->y, z+ ->z;
+defined RemoveLetters: 12.7 kB. 27 states, 755 arcs, Cyclic.
+foma[6]: down pizza
+pizza
+foma[6]: regex RemoveLetters;
+12.7 kB. 27 states, 755 arcs, Cyclic.
+foma[7]: down pizza
+pizza
+piza
+foma[7]: def insert ? [0:?|?]* ?;
+defined insert: 354 bytes. 3 states, 5 arcs, Cyclic.
+foma[7]: regex W .o. RemoveLetters .o. insert;
+8.7 MB. 19422 states, 571010 arcs, Cyclic.
+foma[8]: down pizza
+pizza
+pizz?a
+pizzaa
+pizzba
+pizzca
+pizzda
+pizzea
+pizzfa
+pizzga
+pizzha
+pizzia
+pizzja
+pizzka
+pizzla
+pizzma
+pizzna
+pizzoa
+pizzpa
+pizzqa
+pizzra
+pizzsa
+pizzta
+pizzua
+pizzva
+pizzwa
+pizzxa
+pizzya
+pizzza
+piza
+piz?a
+pizaa
+pizba
+pizca
+pizda
+pizea
+pizfa
+pizga
+pizha
+pizia
+pizja
+pizka
+pizla
+pizma
+pizna
+pizoa
+pizpa
+pizqa
+pizra
+pizsa
+pizta
+pizua
+pizva
+pizwa
+pizxa
+pizya
+pizza
+piz?za
+piz?z?a
+piz?zaa
+piz?zba
+piz?zca
+piz?zda
+piz?zea
+piz?zfa
+piz?zga
+piz?zha
+piz?zia
+piz?zja
+piz?zka
+piz?zla
+piz?zma
+piz?zna
+piz?zoa
+piz?zpa
+piz?zqa
+piz?zra
+piz?zsa
+piz?zta
+piz?zua
+piz?zva
+piz?zwa
+piz?zxa
+piz?zya
+piz?zza
+piz??za
+piz??z?a
+piz??zaa
+piz??zba
+piz??zca
+piz??zda
+piz??zea
+piz??zfa
+piz??zga
+piz??zha
+piz??zia
+piz??zja
+piz??zka
+piz??zla
+piz??zma
+piz??zna
+piz??zoa
+foma[8]: up poiuygfdcxza
+pizza
+pa
+foma[8]: 

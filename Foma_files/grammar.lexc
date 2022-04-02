@@ -1,0 +1,17 @@
+Multichar_Symbols [Pl] [Sg]
+
+LEXICON Root
+
+dog 	Ninfl;
+cat		Ninfl;
+bus		Ninfl;
+fox		Ninfl;
+watch	Ninfl;
+fly		Ninfl;
+buzz	Ninfl;
+
+
+LEXICON Minfl
+
+[Pl]:+s #;
+[Sg]:0   #;

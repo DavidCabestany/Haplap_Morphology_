@@ -1,0 +1,10 @@
+Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='data-bin/esp', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, simul_type=None, source_lang='esp.input', srcdict=None, suppress_crashes=False, target_lang='esp.output', task='translation', tensorboard_logdir=None, testpref=None, tgtdict=None, threshold_loss_scale=None, thresholdsrc=5, thresholdtgt=5, tokenizer='space', tpu=False, trainpref='train', use_plasma_view=False, user_dir=None, validpref='dev', wandb_project=None, workers=1)
+[esp.input] Dictionary: 64 types
+[esp.input] train.esp.input: 10000 sents, 164823 tokens, 0.00182% replaced by <unk>
+[esp.input] Dictionary: 64 types
+[esp.input] dev.esp.input: 1000 sents, 16539 tokens, 0.0% replaced by <unk>
+[esp.output] Dictionary: 40 types
+[esp.output] train.esp.output: 10000 sents, 132847 tokens, 0.00226% replaced by <unk>
+[esp.output] Dictionary: 40 types
+[esp.output] dev.esp.output: 1000 sents, 13314 tokens, 0.0% replaced by <unk>
+Wrote preprocessed data to data-bin/esp

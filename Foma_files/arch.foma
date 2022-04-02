@@ -1,0 +1,13 @@
+
+
+read lexc archaic.lexc
+
+def arch
+
+def TRule e d -> t || p_.#.;
+def YRule y -> i e ||  _"+"e d ;
+def ERule e -> 0 || _"+"e d ;
+
+def Cleanup "+" -> 0 ;
+
+def Gr arch .o. ERule .o. YRule .o. Cleanup ;

@@ -1,0 +1,35 @@
+Multichar_Symbols +N +Sg +Pl
+
+LEXICON Root
+
+
+exit
+
+régimen	    NInfl;
+espécimen	NInfl;
+hipérbaton  NInfl;
+tésis		NInfl;
+épsilon		NInfl;
+carácter	NInfl;
+parachoques NInfl;
+alumno      NInfl;
+amigo       NInfl;
+bebé        NInfl;
+chica       NInfl;
+composición NInfl;
+doctor      NInfl;
+flor        NInfl;
+interés     NInfl;
+lápiz       NInfl;
+nación      NInfl;
+papel       NInfl;
+pez         NInfl;
+presidente  NInfl;
+rey         NInfl;
+tapiz       NInfl;
+tisú        NInfl;
+
+LEXICON NInfl
+
++N+Sg:0  #;
++N+Pl:^s #;

@@ -1,0 +1,5 @@
+NN in Morph = seq by seq (seq2seq)
+
+
+./train.sh esp
+

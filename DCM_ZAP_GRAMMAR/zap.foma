@@ -1,0 +1,23 @@
+#Project Developed By David Cabestany
+
+read lexc zap1.lexc
+
+eliminate flags
+def Lexicon;   
+
+def Cleanup "+" -> 0 ; 												# clears the + symbols 
+def Velar [k|x|g|ɣ|ɰ|ʟ] ;	
+def RuleNasal  n -> ŋ || _ Velar ; 									# changes the alveolar n
+def Fricative  [θ|ð|ʃ|z|s|x|ʒ|ʂ|ʐ|ç|ʝ|ɣ|χ|ʁ|ħ|ʕ] ; 
+
+def RuleFricative  [..] -> a || Fricative _ Fricative ;				# inserts [a] sound between two fricative. 
+def BackVowel [o|u] ;
+def RuleVowelHarmony1 I -> u , E -> o || BackVowel (?)*  _ ; 		# changes front vowels for its corresponding back vowels
+def FrontCentralVowel [a|e|i] ;
+def RuleVowelHarmony2 I -> i , E -> e || FrontCentralVowel (?)*  _ ; # mantains the front vowels of the prefix
+
+def rules 	RuleNasal .o. RuleFricative .o. RuleVowelHarmony1 .o. RuleVowelHarmony2;
+
+regex Lexicon .o. Cleanup .o.  rules ;
+
+pairs

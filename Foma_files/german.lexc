@@ -1,0 +1,24 @@
+Multichar_Symbols [1PSGPRES] [2PSGPRES] [3PSGPRES] [1PPLPRES] [2PPLPRES] [3PPLPRES] [PERFPART]
+
+LEXICON Root
+
+Prefix;
+
+LEXICON Prefix
+
+0:ge  Verb;
+      Verb;
+
+LEXICON Verb
+
+spielen:spiel VerbInfl;
+
+LEXICON VerbInfl
+
+[1PSGPRES]:e  #;
+[2PSGPRES]:st #;
+[3PSGPRES]:t  #;
+[1PPLPRES]:en #;
+[2PPLPRES]:t  #;
+[3PPLPRES]:en #;
+[PERFPART]:t  #;

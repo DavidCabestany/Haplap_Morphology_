@@ -1,0 +1,28 @@
+Multichar_Symbols @U.PASTPART.ON@ @U.PASTPART.OFF@ [PASTPART] [INF]
+
+LEXICON Root
+
+@U.PASTPART.OFF@   Verbs;
+@U.PASTPART.ON@:@U.PASTPART.ON@y+ Verbs;
+Prefix;
+
+#LEXICON Prefix
+
+0:y+   Verb;
+       Verb;
+
+LEXICON Verb
+
+baptized:baptize VerbInfl;
+occupied:occupy VerbInfl;
+clept:clepe VerbInfl;
+
+
+LEXICON VerbInfl
+
+[PERFPART]:+ed  #;
+
+
+set obey-flags = OFF
+
+set print-space = OFF

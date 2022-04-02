@@ -1,0 +1,35 @@
+Multichar_Symbols [V] [N] [A] [Pl] [Sg] [1p] [2p] [3p]
+
+LEXICON Root
+
+Verb ;
+
+LEXICON Verb
+
+think   V;
+excuse  V;
+run     V;
+fly     V;
+watch   V;
+
+
+LEXICON V
+
++able   A ;
+[V]:0  VInfl;
+
+LEXICON A
++ity   N ;
+[A]:0  #;
+
+LEXICON N
+[N]:0 NInfl;
+
+LEXICON NInfl
+        [Pl]:+s #;
+	[Sg]:0 #;
+
+LEXICON VInfl
+[1p][Sg]:0 #;
+[2p][Sg]:0 #;
+[3p][Sg]:+s #;

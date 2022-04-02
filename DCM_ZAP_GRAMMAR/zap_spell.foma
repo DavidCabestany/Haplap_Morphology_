@@ -1,0 +1,5 @@
+source zap.foma
+
+pop
+def SpellCheck ?*[?:?-? | ?:0 | 0:? | ?:? ]?* ;
+regex [Lexicon .o. Rules].l .o. SpellCheck ;

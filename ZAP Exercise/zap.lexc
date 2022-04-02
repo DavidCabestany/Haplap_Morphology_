@@ -1,0 +1,20 @@
+Multichar_Symbols [1P] [2P] [3P] [SG] [PL] [DURATIVE] [PAST] [PRES] [HEARSAY]
+ 
+LEXICON Root
+
+dummy[NEG]:dummy #; !remove this and add prefix LEXICONs
+
+Lexicon Verb;
+
+! The verb stems you need are here
+
+kata Suffix1;  ! You don't have to call the next lexicon Suffix1
+lupo Suffix1;
+pele Suffix1;
+sape Suffix1;
+
+! kata = to lie
+! lupo = to drink
+! pele = to play soccer
+! sape = to run
+

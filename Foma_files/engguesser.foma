@@ -1,0 +1,24 @@
+# Our lexicon
+
+def C [b|c|d|f|g|h|k|l|m|n|p|q|r|s|t|v|w|x|z];
+def V [a|e|i|o|u|y];
+
+def Word [C|V]+ "[GUESS]":0;
+
+# Substitute all transitions with "[GUESSNOUN]" in-place
+# with Word before defining the lexicon
+
+read lexc engguesser.lexc
+substitute defined Word for "[GUESSNOUN]"
+def arch
+
+# Define sibilants orthographically
+def Sib [s | s h | z | x | c h ];
+
+# e-epenthesis rule: bus+s > buses, etc.
+def ERule "+" -> e || Sib _ Sib ;
+def YRule y -> i e || C _ "+" ;
+def Cleanup "+" -> 0 ;
+
+def Grammar Lex .o. ERule .o. YRule .o. Cleanup ;
+regex Grammar;

@@ -1,0 +1,19 @@
+# define Lexicon [{alumno}|{amigo}|{bebé}|{chica}|{composición}|{doctor}|{flor}|{interés}|{lápiz}|{nación}|{papel}|{pez}|{presidente}|{rey}|{tapiz}|{tisú}] [ ["+N" "+Sg"]:0 | ["+N" "+Pl"]:["^" s]] ;
+
+read lexc spanish.lexc
+define Lexicon;
+
+define V [a|e|i|o|u|ü|y|á|é|í|ó|ú];
+define Vacc [á|é|í|ó|ú];
+define C [b|v|c|c h|d|f|g|h|j|k|l|l l|m|n|ñ|p|q|r|s|t|v|x|z];
+
+define ZRule z -> c || _ %^ s;
+define AddE [..] -> e || [C|y|[Vacc - é]] %^ _ s ;
+
+define RemoveAccent á -> a , é -> e , í -> i, ó -> o, ú -> u || _ V* C+ %^ e s;
+
+define Cleanup %^ -> 0;
+
+define Rules ZRule .o. AddE .o. RemoveAccent .o. Cleanup;
+
+regex Lexicon .o. Rules;

@@ -1,0 +1,22 @@
+Multichar_Symbols [N] [Singular] [Plural] [GUESSNOUN]
+
+LEXICON Root
+
+Noun ;
+
+LEXICON Noun
+
+[GUESSNOUN] NInfl;
+cat    NInfl;
+dog    NInfl;
+horse  NInfl;
+mouse  NInfl;
+mouse[N][Plural]:mice #;
+fish   NInfl;
+bus    NInfl;
+fox    NInfl;
+
+LEXICON NInfl
+
+[N][Singular]:0 #;
+[N][Plural]:+s  #;

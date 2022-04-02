@@ -1,0 +1,18 @@
+def SPron [ {a}		| {ni} 		];
+def DPron [ {ni}	| {ku}		| {m}		|{tu}		| {wa} 	];
+def Tense [ {na} 	| {ta} 		| {li} 		| {me} 		];
+def Verb  [ {ona} 	| {saidia} 	| {piga} 	| {chukua} 	| {ua} 	| {tazama} | {sikia} | {panya} | {penda} ];
+
+def SuahiliWord SPron Tense (DPron) Verb ;
+
+
+def SPronT [[ {a}:"[Subj3pMSg]"] | [{ni}:"[Subj1pMSg]"]] ;
+def DPronT [[{ni}:" [Obj1pMSg]"] | [{ku}:" [Obj2pMSg]"] | [{m}:" [Obj3pMSg]"] | [{tu}:" [Obj1pMPl]"] | [{wa}:" [Obj3pMPl]"]] ;
+def TenseT [[{na}:"[Present] "]  | [{ta}:"[Future] "]   | [{li}:"[Past] "]    | [{me}:"[past part.] "]] ;
+def VerbT  [{ona}:{ona} 		 | {saidia}:{saidia} 	| {piga}:{piga} 	  | {chukua}:{chukua} 	 | {ua}:{ua} | {tazama}:{tazama} | {sikia}:{sikia} | {panya}:{panya} | {penda}:{penda}] ;
+
+def VerbTGloss [{ona}:"ona: see" | {saidia}:"saidia: help" | {piga}:"piga: hit" | {chukua}:"chukua: carry" | {ua}:"ua: kill" | {tazama}:"tazama: look" | {sikia}:"sikia:hear" | {panya}:"panya:cure" | {penda}:"penda:like"] ;
+
+def SuahPoS SPronT TenseT (DPronT) VerbT ;
+
+def SuahGloss SPronT TenseT (DPronT) VerbTGloss ;
